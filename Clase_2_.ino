@@ -24,7 +24,7 @@ void loop() {
   
   float T; //Declaramos la variable T como la temperatura del LM35
   int n = analogRead(PIN_LM35); // Guardamos la lectura del LM35 en la variable n
-  T=n/10; //
+  T=n*0.1221; //
   Serial.println(T);
   delay(100);
   
